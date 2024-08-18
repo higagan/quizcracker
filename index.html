@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>QuizCracker - AI-Powered Question Generation Platform</title>
+    <link href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css" rel="stylesheet">
+    <!-- Optional: Add a favicon -->
+    <link rel="icon" href="path-to-your-favicon.ico" type="image/x-icon">
+</head>
+<body class="bg-gray-100">
+
+    <!-- Navbar -->
+    <nav class="bg-gradient-to-tr from-indigo-600 via-blue-400 to-purple-600 p-0.5">
+        <div class="max-w-7xl mx-auto px-4 py-4">
+            <div class="flex justify-between items-center">
+                <!-- Logo -->
+                <a href="#" class="flex items-center">
+                    <span class="ml-2 text-2xl font-bold text-white">QuizCracker</span>
+                </a>
+                <div class="flex space-x-4">
+                    <a href="#features" class="text-white hover:text-gray-200">Features</a>
+                    <a href="#how-it-works" class="text-white hover:text-gray-200">How It Works</a>
+                    <a href="#contact" class="text-white hover:text-gray-200">Contact</a>
+                </div>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Hero Section with Background Image -->
+    <section class="relative bg-cover bg-center h-screen" style="background-image: url('path-to-background-image.jpg');">
+        <div class="absolute inset-0 bg-slate-50 bg-opacity-60"></div>
+        <div class="relative z-10 flex flex-col items-center justify-center h-full text-center text-indigo-500">
+            <h1 class="text-5xl font-extrabold leading-tight animate-fade-in">Transform Your Learning with AI-Powered Quizzes</h1>
+            <p class="mt-4 text-xl max-w-xl animate-fade-in-delay">Optimize your interview preparation with AI-driven assessment.</p>
+            <a href="#get-started" class="mt-8 inline-block bg-gradient-to-r from-blue-500 via-indigo-500 to-pink-500 text-white font-bold py-4 px-8 rounded-full shadow-lg transform transition-transform duration-300 ease-in-out hover:scale-105 hover:bg-gradient-to-r hover:from-indigo-500 hover:to-blue-500 hover:shadow-xl focus:outline-none focus:ring-2 focus:ring-blue-500 focus:ring-opacity-50">Get Started</a>
+
+        </div>
+    </section>
+
+    <!-- Features Section with Hover Effects -->
+    <section id="features" class="py-20 bg-gray-100">
+        <div class="max-w-7xl mx-auto px-4 text-center">
+            <h2 class="text-3xl font-bold text-indigo-700">Discover Our Features</h2>
+            <p class="mt-4 text-lg text-indigo-600">Explore the powerful tools that make our platform the best choice for your learning needs.</p>
+            <div class="mt-10 grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8">
+                
+                <!-- Feature Card 1 -->
+                <div class="bg-white p-6 rounded-lg shadow-lg transition-transform transform hover:scale-105">
+                    <img src="images/aipic1.png" alt="AI Icon" class="h-16 w-16 mx-auto rounded-full object-cover">
+                    <h3 class="mt-6 text-xl font-bold text-blue-800">AI-Powered Question Generation</h3>
+                    <p class="mt-4 text-gray-600">Generate diverse and relevant questions using cutting-edge AI technology.</p>
+                </div>
+
+                <!-- Feature Card 2 -->
+                <div class="bg-white p-6 rounded-lg shadow-lg transition-transform transform hover:scale-105">
+                    <img src="images/topic.png" alt="Topic Icon" class="h-16 w-16 mx-auto rounded-full object-cover">
+                    <h3 class="mt-6 text-xl font-bold text-blue-800">Topic Selection</h3>
+                    <p class="mt-4 text-gray-600">Input any topic or job role to instantly create tailored quizzes.</p>
+                </div>
+
+                <!-- Feature Card 3 -->
+                <div class="bg-white p-6 rounded-lg shadow-lg transition-transform transform hover:scale-105">
+                    <img src="images/quiz.png" alt="Quiz Icon" class="h-16 w-16 mx-auto rounded-full object-cover">
+                    <h3 class="mt-6 text-xl font-bold text-blue-800">Interactive Quiz Interface</h3>
+                    <p class="mt-4 text-gray-600">Take quizzes with a user-friendly interface and get real-time feedback.</p>
+                </div>
+
+                <!-- Feature Card 4 -->
+                <div class="bg-white p-6 rounded-lg shadow-lg transition-transform transform hover:scale-105">
+                    <img src="images/performance.png" alt="Analytics Icon" class="h-16 w-16 mx-auto rounded-full object-cover">
+                    <h3 class="mt-6 text-xl font-bold text-blue-800">Performance Analytics</h3>
+                    <p class="mt-4 text-gray-600">Track your performance and monitor quiz completion rates.</p>
+                </div>
+
+            </div>
+        </div>
+    </section>
+    
+    <!-- Footer -->
+    <footer id="contact" class="bg-gradient-to-tr from-indigo-600 via-blue-400 to-purple-600 p-0.5">
+        <div class="max-w-7xl mx-auto px-4 text-center">
+            <h2 class="text-2xl font-bold text-white hover:text-black">Contact Us</h2>
+            <p class="mt-4 text-white hover:text-black">Have questions? We're here to help. Get in touch with our support team.</p>
+            <div class="mt-6 flex justify-center space-x-6">
+                <a href="#" class="text-white hover:text-black">Twitter</a>
+                <a href="#" class="text-white hover:text-black">Facebook</a>
+                <a href="#" class="text-white hover:text-black">LinkedIn</a>
+            </div>
+            <p class="mt-8 text-white">&copy; 2024 QuizCracker. All rights reserved.</p>
+        </div>
+    </footer>
+
+    <!-- Add the following Tailwind CSS classes for animations -->
+    <style>
+        @keyframes fadeIn {
+            from { opacity: 0; transform: translateY(20px); }
+            to { opacity: 1; transform: translateY(0); }
+        }
+    
+        @keyframes fadeInDelay {
+            from { opacity: 0; transform: translateY(20px); }
+            to { opacity: 1; transform: translateY(0); }
+        }
+    
+        .animate-fade-in {
+            animation: fadeIn 1s ease-out;
+        }
+    
+        .animate-fade-in-delay {
+            animation: fadeInDelay 1.5s ease-out;
+        }
+    
+        .animate-bounce {
+            animation: bounce 2s infinite;
+        }
+    </style>
+    
+
+</body>
+</html>
