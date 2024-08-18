@@ -3,93 +3,119 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>AI Interview Prep</title>
+    <title>QuizCracker - AI-Powered Question Generation Platform</title>
     <link href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css" rel="stylesheet">
+    <!-- Optional: Add a favicon -->
+    <link rel="icon" href="path-to-your-favicon.ico" type="image/x-icon">
 </head>
-<body class="bg-gray-100 font-sans leading-normal tracking-normal">
+<body class="bg-gray-100">
 
     <!-- Navbar -->
-    <nav class="bg-white shadow-md">
-        <div class="container mx-auto px-4 py-4 flex justify-between items-center">
-            <div class="text-2xl font-bold text-indigo-600">AI Interview Prep</div>
-            <div>
-                <a href="#features" class="text-gray-700 hover:text-indigo-600 mx-4">Features</a>
-                <a href="#contact" class="text-gray-700 hover:text-indigo-600 mx-4">Contact</a>
-                <a href="#" class="bg-indigo-600 text-white py-2 px-4 rounded hover:bg-indigo-700">Get Started</a>
+    <nav class="bg-gradient-to-tr from-indigo-600 via-blue-400 to-purple-600 p-0.5">
+        <div class="max-w-7xl mx-auto px-4 py-4">
+            <div class="flex justify-between items-center">
+                <!-- Logo -->
+                <a href="#" class="flex items-center">
+                    <span class="ml-2 text-2xl font-bold text-white">QuizCracker</span>
+                </a>
+                <div class="flex space-x-4">
+                    <a href="#features" class="text-white hover:text-gray-200">Features</a>
+                    <a href="#how-it-works" class="text-white hover:text-gray-200">How It Works</a>
+                    <a href="#contact" class="text-white hover:text-gray-200">Contact</a>
+                </div>
             </div>
         </div>
     </nav>
 
-    <!-- Hero Section -->
-    <section class="bg-indigo-600 text-white py-20">
-        <div class="container mx-auto px-4 text-center">
-            <h1 class="text-4xl font-bold mb-4">Prepare for Your Dream Job with AI-Powered Quizzes</h1>
-            <p class="text-xl mb-6">Generate customized quizzes to ace your next interview. Tailor your preparation by topic or job role and track your progress with ease.</p>
-            <a href="#" class="bg-white text-indigo-600 py-3 px-6 rounded shadow hover:bg-gray-200">Start Your Quiz</a>
+    <!-- Hero Section with Background Image -->
+    <section class="relative bg-cover bg-center h-screen" style="background-image: url('path-to-background-image.jpg');">
+        <div class="absolute inset-0 bg-slate-50 bg-opacity-60"></div>
+        <div class="relative z-10 flex flex-col items-center justify-center h-full text-center text-indigo-500">
+            <h1 class="text-5xl font-extrabold leading-tight animate-fade-in">Transform Your Learning with AI-Powered Quizzes</h1>
+            <p class="mt-4 text-xl max-w-xl animate-fade-in-delay">Optimize your interview preparation with AI-driven assessment.</p>
+            <a href="#get-started" class="mt-8 inline-block bg-gradient-to-r from-blue-500 via-indigo-500 to-pink-500 text-white font-bold py-4 px-8 rounded-full shadow-lg transform transition-transform duration-300 ease-in-out hover:scale-105 hover:bg-gradient-to-r hover:from-indigo-500 hover:to-blue-500 hover:shadow-xl focus:outline-none focus:ring-2 focus:ring-blue-500 focus:ring-opacity-50">Get Started</a>
+
         </div>
     </section>
 
-    <!-- Features Section -->
-    <section id="features" class="py-20">
-        <div class="container mx-auto px-4 text-center">
-            <h2 class="text-3xl font-bold text-gray-800 mb-12">Platform Features</h2>
-            <div class="flex flex-wrap -mx-4">
-                <div class="w-full md:w-1/2 lg:w-1/4 px-4 mb-8">
-                    <div class="bg-white p-6 rounded-lg shadow-md hover:shadow-lg transition-shadow">
-                        <div class="text-indigo-600 mb-4">
-                            <svg class="w-12 h-12 mx-auto" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
-                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 8c-4.418 0-8 1.79-8 4v4h16v-4c0-2.21-3.582-4-8-4zM12 8V4m0 4a2 2 0 110-4m0 0a2 2 0 110-4M12 12v4"></path>
-                            </svg>
-                        </div>
-                        <h3 class="text-xl font-bold text-gray-800 mb-2">AI-Powered Question Generation</h3>
-                        <p class="text-gray-600">Automatically generate a variety of question types based on your selected topic or job role.</p>
-                    </div>
+    <!-- Features Section with Hover Effects -->
+    <section id="features" class="py-20 bg-gray-100">
+        <div class="max-w-7xl mx-auto px-4 text-center">
+            <h2 class="text-3xl font-bold text-indigo-700">Discover Our Features</h2>
+            <p class="mt-4 text-lg text-indigo-600">Explore the powerful tools that make our platform the best choice for your learning needs.</p>
+            <div class="mt-10 grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8">
+                
+                <!-- Feature Card 1 -->
+                <div class="bg-white p-6 rounded-lg shadow-lg transition-transform transform hover:scale-105">
+                    <img src="images/aipic1.png" alt="AI Icon" class="h-16 w-16 mx-auto rounded-full object-cover">
+                    <h3 class="mt-6 text-xl font-bold text-blue-800">AI-Powered Question Generation</h3>
+                    <p class="mt-4 text-gray-600">Generate diverse and relevant questions using cutting-edge AI technology.</p>
                 </div>
-                <div class="w-full md:w-1/2 lg:w-1/4 px-4 mb-8">
-                    <div class="bg-white p-6 rounded-lg shadow-md hover:shadow-lg transition-shadow">
-                        <div class="text-indigo-600 mb-4">
-                            <svg class="w-12 h-12 mx-auto" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
-                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 12h14m-7-7v14"></path>
-                            </svg>
-                        </div>
-                        <h3 class="text-xl font-bold text-gray-800 mb-2">Topic Selection</h3>
-                        <p class="text-gray-600">Choose a specific topic or job role to tailor your quiz questions to your preparation needs.</p>
-                    </div>
+
+                <!-- Feature Card 2 -->
+                <div class="bg-white p-6 rounded-lg shadow-lg transition-transform transform hover:scale-105">
+                    <img src="images/topic.png" alt="Topic Icon" class="h-16 w-16 mx-auto rounded-full object-cover">
+                    <h3 class="mt-6 text-xl font-bold text-blue-800">Topic Selection</h3>
+                    <p class="mt-4 text-gray-600">Input any topic or job role to instantly create tailored quizzes.</p>
                 </div>
-                <div class="w-full md:w-1/2 lg:w-1/4 px-4 mb-8">
-                    <div class="bg-white p-6 rounded-lg shadow-md hover:shadow-lg transition-shadow">
-                        <div class="text-indigo-600 mb-4">
-                            <svg class="w-12 h-12 mx-auto" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
-                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 20h9m2 0h-9m-3 0H3m9 0a1 1 0 110-2m0-10a1 1 0 110-2m-4 6h8m-4-2v4m0 0a1 1 0 110-2m4 2h-8m0-2a1 1 0 110-2"></path>
-                            </svg>
-                        </div>
-                        <h3 class="text-xl font-bold text-gray-800 mb-2">Quiz Interface</h3>
-                        <p class="text-gray-600">Engage with an easy-to-use quiz interface to answer questions and receive immediate feedback.</p>
-                    </div>
+
+                <!-- Feature Card 3 -->
+                <div class="bg-white p-6 rounded-lg shadow-lg transition-transform transform hover:scale-105">
+                    <img src="images/quiz.png" alt="Quiz Icon" class="h-16 w-16 mx-auto rounded-full object-cover">
+                    <h3 class="mt-6 text-xl font-bold text-blue-800">Interactive Quiz Interface</h3>
+                    <p class="mt-4 text-gray-600">Take quizzes with a user-friendly interface and get real-time feedback.</p>
                 </div>
-                <div class="w-full md:w-1/2 lg:w-1/4 px-4 mb-8">
-                    <div class="bg-white p-6 rounded-lg shadow-md hover:shadow-lg transition-shadow">
-                        <div class="text-indigo-600 mb-4">
-                            <svg class="w-12 h-12 mx-auto" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
-                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 11c0-3.038 2.137-5 5-5m7 5c0-3.038-2.137-5-5-5m-9 0c-3.038 0-5 2.137-5 5m0 0c0 3.038 2.137 5 5 5m9 0c3.038 0 5-2.137 5-5m0 0c0 3.038-2.137 5-5 5m-7 0c-3.038 0-5 2.137-5 5m0 0c0 3.038 2.137 5 5 5"></path>
-                            </svg>
-                        </div>
-                        <h3 class="text-xl font-bold text-gray-800 mb-2">Basic Analytics</h3>
-                        <p class="text-gray-600">Monitor your progress with analytics that track time spent, questions answered, and quiz completion rates.</p>
-                    </div>
+
+                <!-- Feature Card 4 -->
+                <div class="bg-white p-6 rounded-lg shadow-lg transition-transform transform hover:scale-105">
+                    <img src="images/performance.png" alt="Analytics Icon" class="h-16 w-16 mx-auto rounded-full object-cover">
+                    <h3 class="mt-6 text-xl font-bold text-blue-800">Performance Analytics</h3>
+                    <p class="mt-4 text-gray-600">Track your performance and monitor quiz completion rates.</p>
                 </div>
+
             </div>
         </div>
     </section>
-
-    <!-- Footer Section -->
-    <footer id="contact" class="bg-gray-800 text-white py-10">
-        <div class="container mx-auto px-4 text-center">
-            <h3 class="text-2xl font-bold mb-4">Get in Touch</h3>
-            <p class="mb-4">Have questions or feedback? We'd love to hear from you!</p>
-            <a href="mailto:support@aiinterviewprep.com" class="text-indigo-400 hover:text-indigo-600">support@aiinterviewprep.com</a>
+    
+    <!-- Footer -->
+    <footer id="contact" class="bg-gradient-to-tr from-indigo-600 via-blue-400 to-purple-600 p-0.5">
+        <div class="max-w-7xl mx-auto px-4 text-center">
+            <h2 class="text-2xl font-bold text-white hover:text-black">Contact Us</h2>
+            <p class="mt-4 text-white hover:text-black">Have questions? We're here to help. Get in touch with our support team.</p>
+            <div class="mt-6 flex justify-center space-x-6">
+                <a href="#" class="text-white hover:text-black">Twitter</a>
+                <a href="#" class="text-white hover:text-black">Facebook</a>
+                <a href="#" class="text-white hover:text-black">LinkedIn</a>
+            </div>
+            <p class="mt-8 text-white">&copy; 2024 QuizCracker. All rights reserved.</p>
         </div>
     </footer>
+
+    <!-- Add the following Tailwind CSS classes for animations -->
+    <style>
+        @keyframes fadeIn {
+            from { opacity: 0; transform: translateY(20px); }
+            to { opacity: 1; transform: translateY(0); }
+        }
+    
+        @keyframes fadeInDelay {
+            from { opacity: 0; transform: translateY(20px); }
+            to { opacity: 1; transform: translateY(0); }
+        }
+    
+        .animate-fade-in {
+            animation: fadeIn 1s ease-out;
+        }
+    
+        .animate-fade-in-delay {
+            animation: fadeInDelay 1.5s ease-out;
+        }
+    
+        .animate-bounce {
+            animation: bounce 2s infinite;
+        }
+    </style>
+    
 
 </body>
 </html>
